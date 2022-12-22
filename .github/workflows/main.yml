@@ -72,7 +72,7 @@ jobs:
           sudo docker pull flowslowgrow/infra_actions
           #остановка всех контейнеров
           sudo docker stop $(sudo docker ps -a -q)
-          sudo docker run --rm -d -p 5000:5000 flowslowgrow/infra_actions
+          sudo docker run --rm -d -p 5000:5000 andreipashkevic/infra_actions
   send_message:
     runs-on: ubuntu-latest
     needs: deploy
